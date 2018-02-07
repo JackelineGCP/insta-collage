@@ -13,19 +13,9 @@
   width: 200px;
   margin: auto;
 }
+
 .mainImage img{
   padding: 1px;
-}
-
-/* Prevent the text contents of draggable elements from being selectable. */
-[draggable] {
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-  /* Required to make elements draggable in old WebKit */
-  -khtml-user-drag: element;
-  -webkit-user-drag: element;
 }
 
 .foto{
@@ -36,5 +26,19 @@
 
 .fotoMarco{
   background: #0099CC;
+}
 
+
+imgLike{
+  padding: 10px;
+}
+/* Prevent the text contents of draggable elements from being selectable. */
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
 }
