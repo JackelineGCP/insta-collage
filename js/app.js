@@ -1,14 +1,16 @@
 // los eventPrefault, detendrá el comportamiento por defecto de los eventos
 
-let boxOrigin = document.getElementById('image');
+let images = document.querySelectorAll('#content img');
 let boxDestin = document.getElementById('content-box');
+let boxOrigin = document.getElementById('content');
+
+images.forEach(function (value) {
+    value.addEventListener('dragstart', originStar);
+
+})
 
 
 //Eventos
-boxOrigin.addEventListener('dragstart', originStar);
-boxDestin.addEventListener('dragenter', function (e) {
-    e.preventDefault();
-})
 
 boxDestin.addEventListener('dragover', function (e) {
     e.preventDefault();
@@ -20,24 +22,25 @@ boxOrigin.addEventListener('dragend', finished);
 boxDestin.addEventListener('dragenter', initGo);
 
 // dispara la accion al salir de la seccion
-boxDestin.addEventListener('dragleave', initLeave);
-
-
+// boxDestin.addEventListener('dragleave', initLeave);
 
 // Funciones globales 
 function originStar(e) {
-    let newImage = `<img id="foto1" class="foto" draggable="true" src="${boxOrigin.getAttribute('src')}" alt="mascota1">`;
-    e.dataTransfer.setData('text', newImage);
+    let element = e.target; 
+    e.dataTransfer.setData('text', element.getAttribute('id'));
 }
 
 function destinFin(e) {
     e.preventDefault();
-    boxDestin.innerHTML = e.dataTransfer.getData('text');
+    let id = e.dataTransfer.getData('text');
+    let src = document.getElementById(id).src;
+     
+    boxDestin.innerHTML +=  `<img class="foto" src="${src}" alt="${src}">`;
 }
 
 function finished(e) {
     let element = e.target;
-    element.style.visibility = 'hidden';
+    // element.style.visibility = 'hidden';
 
 }
 
@@ -50,5 +53,5 @@ function initGo(e) {
 function initLeave(e) {
     e.preventDefault();
     boxDestin.style.background = 'none';
-    
+
 }
