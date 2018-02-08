@@ -1,52 +1,36 @@
-
-
 .foto {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  cursor: move;
+	width:100px;
+	height:100px;
+	object-fit:cover;
+	cursor:move;
 }
- 
- 
-  ul.ed-menu.s-horizontal.nav-bar {
-  background: #0099CC;
-  color: white;
- }
 
- ul.ed-menu.s-horizontal.nav-bar:hover {
-   cursor: pointer;
- }
+ul.ed-menu.s-horizontal.nav-bar {
+	background:#593959;
+}
 
- .foto.over {
-  border: 2px dashed #000;
+ul.ed-menu.s-horizontal.nav-bar a {
+	color: white;
+}
 
+.foto.over {
+	border:2px dashed #55D6BE;
 }
 
 .one {
-  width: 100px;
-  height: 200px;
-  
-
+	width:100px;
+  height:30vh;
+  object-fit:cover;
 }
-.two {
-  width: 100px;
-  height: 200px;
-
-}
-.tree {
-  width: 100px;
-  height: 200px;
-
-}
-
+/*Aquí se define el ancho del contener de nuevas imagenes*/
 #content-box {
-  border: 2px dotted black;
-  width: max-content;
-  width: 300px;
-  height: 300px;
+	border:2px dotted #2E5EAA;
+	/* width:max-content;*/
+  /* height:auto; */
+  width: 305px;
+  height: 30vh;
 }
 
-#content {
-  /* border: 2px dashed red; */
- 
+a {
+  color: white;
 }
