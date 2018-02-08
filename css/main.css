@@ -1,44 +1,52 @@
 
-.contenido{
-  max-width: 600px;
-  margin: auto;
-}
 
-.mainImage{
-  border: 1px solid #EAEAEA;
-  border-radius: 20px;
-  padding: 30px;
-  padding-bottom: 0;
-  background: gray;
-  width: 200px;
-  margin: auto;
+.foto {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  cursor: move;
 }
-
-.mainImage img{
-  padding: 1px;
-}
-
-.foto{
-  height: 30%;
-  width: 30%;
-  padding: 5px;
-}
-
-.fotoMarco{
+  /* background: #0099CC; */
+ 
+  ul.ed-menu.s-horizontal.nav-bar {
   background: #0099CC;
+  color: white;
+ }
+
+ ul.ed-menu.s-horizontal.nav-bar:hover {
+   cursor: pointer;
+ }
+
+ .foto.over {
+  border: 2px dashed #000;
+
 }
 
+.one {
+  width: 100px;
+  height: 200px;
+  
 
-imgLike{
-  padding: 10px;
 }
-/* Prevent the text contents of draggable elements from being selectable. */
-[draggable] {
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-  /* Required to make elements draggable in old WebKit */
-  -khtml-user-drag: element;
-  -webkit-user-drag: element;
+.two {
+  width: 100px;
+  height: 200px;
+
+}
+.tree {
+  width: 100px;
+  height: 200px;
+
+}
+
+#content-box {
+  border: 2px dotted black;
+   /* width: max-content; */
+  width: 300px;
+  height: 300px;
+}
+
+#content {
+  /* border: 2px dashed red; */
+ 
 }

@@ -6,71 +6,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous">
+  <!-- CSS ED GRID -->
+  <link rel="stylesheet" href="css/ed-grid.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
   <title>Insta Collage</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">
-      <img src="assets/images/mascota1" width="30" height="30" class="d-inline-block align-top" alt="">Mascotas
-    </a>
+  <nav>
+    <ul class="ed-menu s-horizontal nav-bar">
+      <li>
+        <a>
+          <i class="far fa-images"></i> Collage</a>
+      </li>
+    </ul>
   </nav>
-  <section id="galeria">
-    <div class="container">
-      <div class="col-sm-2 img-fluid img-thumbnail">
-        <img id="foto1" class="foto" draggable="true" src="assets/images/mascota1.jpeg" alt="mascota1">
-        <img id="foto3" class="foto" draggable="true" src="assets/images/mascota3.jpeg" alt="mascota3">
-        <img id="foto4" class="foto" draggable="true" src="assets/images/mascota4.jpeg" alt="mascota4">
-      </div>
+  <section class="ed-container no-padding" id="content-box">
+    <!-- <img id="foto1" class="foto one" draggable="true" src="assets/images/mascota1.jpeg" alt="mascota1">
+    <img id="foto2" class="foto two" draggable="true" src="assets/images/mascota2.jpeg" alt="mascota2">
+    <img id="foto3" class="foto tree" draggable="true" src="assets/images/mascota3.jpeg" alt="mascota3"> -->
 
-      <!--Foto Principal-->
-      <div class="flex img-fluid img-thumbnail text-center mainImage">
-        <img id="foto5" class="foto" draggable="true" src="assets/images/mascota5.jpeg" alt="mascota5">
-      </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-3 col-md-3 img-fluid flex img-thumbnail fotoMarco">
-            <!--
-            <div class="foto-marco"></div>
-            <div class="foto-marco"></div>
-            <div class="foto-marco"></div>
-            <div class="foto-marco"></div>
-            <div class="foto-marco"></div>
-            <div class="foto-marco"></div>
-            <div class="foto-marco"></div>
-            <div class="foto-marco"></div>
-            <div class="foto-marco"></div>
-            -->
-            <img id="foto1" class="foto" draggable="true" src="assets/images/mascota1.jpeg" alt="mascota1">
-            <img id="foto2" class="foto" draggable="true" src="assets/images/mascota2.jpeg" alt="mascota2">
-            <img id="foto3" class="foto" draggable="true" src="assets/images/mascota3.jpeg" alt="mascota3">
-            <img id="foto4" class="foto" draggable="true" src="assets/images/mascota4.jpeg" alt="mascota4">
-            <img id="foto5" class="foto" draggable="true" src="assets/images/mascota5.jpeg" alt="mascota5">
-            <img id="foto6" class="foto" draggable="true" src="assets/images/mascota6.jpeg" alt="mascota6">
-            <img id="foto7" class="foto" draggable="true" src="assets/images/mascota7.jpeg" alt="mascota7">
-            <img id="foto8" class="foto" draggable="true" src="assets/images/mascota8.jpeg" alt="mascota8">
-            <img id="foto9" class="foto" draggable="true" src="assets/images/mascota9.jpeg" alt="mascota9">
-          </div>
-        </div>
-      </div>
+  </section>
+  <nav>
+    <ul class="ed-menu s-horizontal nav-bar">
+      <li>
+        <a>
+          <i class="far fa-clone"></i> Selecciona varios </a>
+      </li>
+    </ul>
+  </nav>
+  <section class="ed-container" id="content">
+    <div class="ed-item">
+      <img id="image" class="foto" draggable="true" src="assets/images/mascota1.jpeg" alt="mascota1">
+      <img id="image" class="foto" draggable="true" src="assets/images/mascota2.jpeg" alt="mascota2">
+      <img id="image" class="foto" draggable="true" src="assets/images/mascota3.jpeg" alt="mascota3">
+      <img id="image" class="foto" draggable="true" src="assets/images/mascota4.jpeg" alt="mascota4">
+      <img id="image" class="foto" draggable="true" src="assets/images/mascota5.jpeg" alt="mascota5">
+      <img id="image" class="foto" draggable="true" src="assets/images/mascota6.jpeg" alt="mascota6">
+      <img id="image" class="foto" draggable="true" src="assets/images/mascota7.jpeg" alt="mascota7">
+      <img id="image" class="foto" draggable="true" src="assets/images/mascota8.jpeg" alt="mascota8">
+      <img id="image" class="foto" draggable="true" src="assets/images/mascota9.jpeg" alt="mascota9">
     </div>
   </section>
 
+
+  <!-- iconoes -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <!-- javascript js -->
   <script src="js/app.js"></script>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>
